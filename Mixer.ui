@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1303</width>
+    <height>588</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QPushButton" name="Browse_Image1">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Browes first image</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="Imag1_comboBox">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Components</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mag</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Phase</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Real</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Imag</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QComboBox" name="Output_comboBox">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Choose output space ...</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Output1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Output2</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="0" rowspan="4">
+     <widget class="QGraphicsView" name="Image1_graphicsView">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" rowspan="4">
+     <widget class="PlotWidget" name="FT_Image1_graphicsView">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="rubberBandSelectionMode">
+       <enum>Qt::IntersectsItemShape</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QComboBox" name="Component1_comboBox">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Choose first image ...</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Image1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Image2</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QComboBox" name="FT_Component1_comboBox">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Components</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mag</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Phase</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Real</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Imag</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>UniMag</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>UniPhase</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QSlider" name="Component1_Slider">
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QComboBox" name="FT_Component2_comboBox">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Components</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mag</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Phase</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Real</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Imag</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>UniMag</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>UniPhase</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QComboBox" name="Component2_comboBox">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Choose second image ...</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Image1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Image2</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QSlider" name="Component2_Slider">
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QPushButton" name="Browse_Image2">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Browse second image</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QComboBox" name="Imag2_comboBox">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Components</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mag</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Phase</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Real</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Imag</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="5" column="2" rowspan="2">
+     <widget class="PlotWidget" name="Output1_graphicsView"/>
+    </item>
+    <item row="5" column="3" rowspan="2">
+     <widget class="PlotWidget" name="Output2_graphicsView"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QGraphicsView" name="Image2_graphicsView">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="PlotWidget" name="FT_Image2_graphicsView">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="rubberBandSelectionMode">
+       <enum>Qt::IntersectsItemShape</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1303</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">pyqtgraph</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
